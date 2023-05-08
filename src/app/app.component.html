@@ -1,13 +1,10 @@
 <h1>{{title}}</h1>
 
-<div class="row">
-    <div class="column">
-        <app-heroes></app-heroes>
-    </div>
-    <div class="column">
-        <app-messages></app-messages>
-    </div>
-</div>
+<nav>
+    <a routerLink="/dashboard"> DASHBOARD </a>
+    <a routerLink="/heroes"> HEROES </a>
+</nav>
 
+<router-outlet></router-outlet>
 
-
+<app-messages></app-messages>
